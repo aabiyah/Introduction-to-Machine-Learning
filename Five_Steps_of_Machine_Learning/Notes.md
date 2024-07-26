@@ -67,3 +67,4 @@ Using statistical tools, you can calculate things like the mean, inner-quartile 
 ## Data Visualisation
 You can use data visualization to see outliers and trends in your data and to help stakeholders understand your data.
 
+> Extra: https://scikit-learn.org/stable/auto_examples/applications/plot_outlier_detection_wine.html#sphx-glr-auto-examples-applications-plot-outlier-detection-wine-py shows outlier detection in a real dataset.
