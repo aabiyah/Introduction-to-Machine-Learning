@@ -104,7 +104,13 @@ The model training algorithm iteratively updates a model's parameters to minimiz
 - **Hyperparameters**: Settings that are not changed during training but affect the training process, such as the number of clusters.
 - **Iteration**: Be prepared to iterate. Pragmatic problem solving in machine learning often involves testing assumptions, trying new approaches, and comparing results.
 
-# Advanced Topics
+# Step 4: Evaluating a Trained Model
+Model accuracy is a key evaluation metric that measures the fraction of correct predictions made by a model. For example, if you build a model to classify flowers into one of two species based on attributes like petal length, accuracy would tell you how often your model correctly identifies the species. This involves comparing the predicted species to the actual species and calculating the proportion of correct predictions. It's important to remember that the modeling process is highly iterative, and you may need to revisit and adjust earlier assumptions as you progress. This iterative nature is a normal part of model development. In addition to accuracy, other common metrics for evaluating model performance include precision, recall, log loss, F1 score, mean absolute error, hinge loss, quantile loss, R^2, and KL divergence, each providing different insights into model performance.
+
+# Step 5: Use the Model
+Even after you deploy your model, you're always monitoring to make sure your model is producing the kinds of results that you expect. There may be times where you reinvestigate the data, modify some of the parameters in your model training algorithm, or even change the model type used for training.
+
+# Advanced Topics: Machine Learning Models & Python Libraries
 
 ## Linear Models
 
@@ -136,6 +142,10 @@ Deep learning models are based on the conceptual model of the human brain and co
 
 Each of these libraries is feature-rich and suitable for a wide range of machine learning needs.
 
+# Advanced Topics: Using Log Loss
+Let's say you're trying to predict how likely a customer is to buy either a jacket or t-shirt.
+Log loss could be used to understand your model's uncertainty about a given prediction. In a single instance, your model could predict with 5% certainty that a customer is going to buy a t-shirt. In another instance, your model could predict with 80% certainty that a customer is going to buy a t-shirt. Log loss enables you to measure how strongly the model believes that its prediction is accurate.
+In both cases, the model predicts that a customer will buy a t-shirt, but the model's certainty about that prediction can change.
 
 
 > Extra: https://scikit-learn.org/stable/auto_examples/applications/plot_outlier_detection_wine.html#sphx-glr-auto-examples-applications-plot-outlier-detection-wine-py shows outlier detection in a real dataset.
